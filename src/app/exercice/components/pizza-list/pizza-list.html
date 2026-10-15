@@ -1,0 +1,8 @@
+<div>
+    <h2>liste des pizzas</h2>
+    <ul>
+        @for(p of pizzasList(); track p.id){
+            <abc-pizza-item [pizza]="p" (delete)="supprimer($event)"></abc-pizza-item>
+        }
+    </ul>
+</div>
